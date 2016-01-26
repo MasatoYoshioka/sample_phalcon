@@ -9,38 +9,41 @@ https://github.com/phalcon/phalcon-devtools
 
 compoer install
 
-``
+```
 $curl -s http://getcomposer.org/installer | php
-``
+```
 
-``composer.json
+composer.json
+
+
+```
 {
     "require": {
         "phalcon/devtools": "1.3.*@dev"
     }
 }
-``
+```
 
 install
 
-``
+```
 $./composer.phar install
-``
+```
 
 シンボリックリンク
 
-``
+```
 $ln -s ~/vendor/phalcon/devtools/phalcon.php /usr/bin/phalcon
 $phalcon commands
-``
+```
 
 
 プロジェクトを作成
 
-``
+```
 $cd /vargrant
 $phalcon project todo
-``
+```
 
 アクセスをする
 http://192.168.33.10
@@ -53,18 +56,18 @@ DBの準備
 
 まずmysqlにlogin
 
-``
+```
 $mysql -u root -p
-``
+```
 
 databaseを作成
 
-``
+```
 CREATE DATABASE todo;
-``
+```
 
 スッキャフォールドでCRUDを作ってみる
 
-``
+```
 phalcon scaffold --table-name todo
-``
+```
